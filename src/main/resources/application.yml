@@ -2,11 +2,11 @@ spring:
   application:
     name: demo-backend
   datasource:
-    name: demo_mysql_db
+    name: db_demo
     platform: mysql
-    url: jdbc:mysql://localhost:3306/demo_backend
+    url: jdbc:mysql://localhost:3306/db_demo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password: ABCabc123
+    password: 2208
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
       connectionTestQuery: select 1
